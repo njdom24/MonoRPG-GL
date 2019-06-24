@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>/home/damino/Projects/wraar/wraar/Content/corneria.tmx</SourceFile>
+  <SourceTime>2019-05-18T16:23:01.478481-04:00</SourceTime>
+  <DestFile>/home/damino/Projects/wraar/wraar/bin/DesktopGL/Any CPU/Debug/Content/corneria.xnb</DestFile>
+  <DestTime>2019-06-21T19:46:15.41073-04:00</DestTime>
+  <Importer>TiledMapImporter</Importer>
+  <ImporterTime>2018-05-23T11:26:24-04:00</ImporterTime>
+  <Processor>TiledMapProcessor</Processor>
+  <ProcessorTime>2018-05-23T11:26:24-04:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
