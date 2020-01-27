@@ -46,13 +46,13 @@ namespace RPG
 			Window.Title = "FF";
             manager.IsFullScreen = true;
 
-			int scale = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / width;//400 for full, 800 for half
+			int scale = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / width;//400 for full, 800 for half
 			//scale = 1;
-			//Window.Position = new Point(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2 - 200 * scale, GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2 - 120 * scale);
+			//Window.Position = new Point(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 2 - 200 * scale, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 2 - 120 * scale);
 
 			//Window.Position = new Point(-width/2, -height/2);
-			manager.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 1;//400 * scale;
-			manager.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 1;//240 * scale;
+			manager.PreferredBackBufferWidth = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 1;//400 * scale;
+			manager.PreferredBackBufferHeight = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 1;//240 * scale;
 			//manager.PreferredBackBufferWidth = 400;//400 * scale;
 			//manager.PreferredBackBufferHeight = 240;//240 * scale;
 			largestScale.X = width * scale;
@@ -75,7 +75,7 @@ namespace RPG
 			PresentationParameters pp = GraphicsDevice.PresentationParameters;
 			original = new RenderTarget2D(GraphicsDevice, Game1.width, Game1.height, false, SurfaceFormat.Color, DepthFormat.None, pp.MultiSampleCount, RenderTargetUsage.DiscardContents);
 			nearest = new RenderTarget2D(GraphicsDevice, largestScale.X, largestScale.Y, false, SurfaceFormat.Color, DepthFormat.None, pp.MultiSampleCount, RenderTargetUsage.DiscardContents);
-			bilinear = new RenderTarget2D(GraphicsDevice, GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width, GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height, false, SurfaceFormat.Color, DepthFormat.None, pp.MultiSampleCount, RenderTargetUsage.DiscardContents);
+			bilinear = new RenderTarget2D(GraphicsDevice, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height, false, SurfaceFormat.Color, DepthFormat.None, pp.MultiSampleCount, RenderTargetUsage.DiscardContents);
 			//nearest = bilinear = original;
 			//currentScreen = new OldMap(GraphicsDevice, Content, 16, 16, 10, 10);
 			currentScreen = new Battle(Content, original, GraphicsDevice, pp);

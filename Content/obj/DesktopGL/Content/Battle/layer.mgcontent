@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>/home/damino/Projects/MonoRPG-GL/MonoRPG-GL/Content/Battle/layer.png</SourceFile>
-  <SourceTime>2019-05-18T16:23:01.401814-04:00</SourceTime>
-  <DestFile>/home/damino/Projects/MonoRPG-GL/MonoRPG-GL/Content/bin/DesktopGL/Content/Battle/layer.xnb</DestFile>
-  <DestTime>2019-06-22T02:59:23.271374-04:00</DestTime>
+  <SourceFile>/home/damino/Documents/MonoRPG_Current/MonoRPG-GL/Content/Battle/layer.png</SourceFile>
+  <SourceTime>2020-01-27T17:42:45.7972724-05:00</SourceTime>
+  <DestFile>/home/damino/Documents/MonoRPG_Current/MonoRPG-GL/Content/bin/DesktopGL/Content/Battle/layer.xnb</DestFile>
+  <DestTime>2020-01-27T18:01:16.0515491-05:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2019-05-18T16:20:23.552151-04:00</ImporterTime>
+  <ImporterTime>2020-01-27T12:04:06.8418775-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2019-05-18T16:20:23.552151-04:00</ProcessorTime>
+  <ProcessorTime>2020-01-27T12:04:06.8418775-05:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>
